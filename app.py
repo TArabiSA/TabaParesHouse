@@ -1,10 +1,8 @@
 from PIL import Image
 import streamlit as st
 from multiapp import MultiApp
-from apps.week import week
-from apps.month import month
-from apps.quarter import quarter
-from apps.year import year
+import week, month, quarter, year
+
 
 
 
