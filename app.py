@@ -1,5 +1,4 @@
 from PIL import Image
-from matplotlib import container
 from streamlit_lottie import st_lottie
 import streamlit as st
 st.set_page_config(page_title="Taba Pares House", page_icon=":chart_with_upwards_trend:", layout= "wide")
