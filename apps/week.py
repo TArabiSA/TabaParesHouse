@@ -1,6 +1,6 @@
 from html.entities import html5
 import streamlit as st
-from streamlit_lottie import st_lottie
+import st_lottie
 import numpy as np
 import pandas as pd
 import requests
