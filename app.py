@@ -1,6 +1,7 @@
 from PIL import Image
 import streamlit as st
 from multiapp import MultiApp
+import apps as data
 from apps import week, month, quarter, year
 st.set_page_config(page_title="Taba Pares House", page_icon=":chart_with_upwards_trend:", layout= "wide")
 img_contact_form = Image.open("C:/Users/yakul/mutipage/images/tph.jpg")
