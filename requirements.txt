@@ -1,0 +1,13 @@
+keras==2.8.0
+keras_nightly==2.9.0.dev2022033107
+matplotlib==3.5.1
+numpy==1.22.2
+pandas==1.4.1
+Pillow==9.1.0
+requests==2.27.1
+scikit_learn==1.0.2
+streamlit==1.8.1
+streamlit_lottie==0.0.3
+tensorflow==2.8.0
+tf_nightly==2.9.0.dev20220331
+~treamlit==1.7.0
