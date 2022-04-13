@@ -1,11 +1,11 @@
 from html.entities import html5
 import streamlit as st
-import st_lottie
 import numpy as np
 import pandas as pd
 import requests
 import matplotlib.pyplot as plt
 import tensorflow as tf
+from streamlit_lottie import st_lottie
 from data.week_data import week_data
 
 
