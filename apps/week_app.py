@@ -38,7 +38,7 @@ def app():
     st.markdown("###   ")
     st.subheader("Weekly Sale's from January 10 to March 27 2022 chart")
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/week.csv')
+    df = iris
    
     plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
@@ -50,7 +50,7 @@ def app():
 # Second Graph
 
     st.subheader("Sale's vs Time chart with 4 weeks moving average")
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/week.csv')
+    df = iris
     ma4 = df.Sale.rolling(4).mean()
     ma4
     plt.figure(figsize = (12,6))
@@ -66,7 +66,7 @@ def app():
  # Third Graph 
     
     st.subheader("Sale's vs Time chart with 4 weeks and 8 weeks moving average")
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/week.csv')
+    df = iris
     ma4 = df.Sale.rolling(4).mean()
     ma4
     ma8 = df.Sale.rolling(8).mean()
@@ -162,7 +162,7 @@ def app():
 
 # Prediction april 3 22022
 
-    weeks = pd.read_csv('C:/Users/yakul/mutipage/data/week.csv')
+    weeks = iris
     newdf = weeks.filter(['Sale'])
     last_4_weeks = newdf[-4:].values
     last_4_weeks_scaled = scaler.transform(last_4_weeks)
