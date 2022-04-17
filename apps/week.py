@@ -5,7 +5,6 @@ import pandas as pd
 import requests
 from streamlit_lottie import st_lottie
 import matplotlib.pyplot as plt
-import tensorflow as tf
 from data.week_data import week_data
 
 
