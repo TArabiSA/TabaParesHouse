@@ -2,9 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-dataset = st.container()
-
-
-with dataset:
-    quarter_data = pd.read_csv("C:/Users/yakul/mutipage/data/quarter.csv")
-    quarter_data.tail()
+def create_quartertable():
+    create_quartertable = pd.read_csv("C:/Users/yakul/mutipage/data/week.csv")
+    create_quartertable.tail()
+    return create_quartertable
