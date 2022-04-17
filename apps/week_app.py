@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from data.week_data import create_weektable
 
 
-
+iris =  create_weektable
 
 def app():
  st.title('Data :page_facing_up:')   
