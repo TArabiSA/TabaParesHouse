@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import requests
 from streamlit_lottie import st_lottie
 from tensorflow import keras
-from keras.models import load_model
 import math
 from data.quarter_data import create_quartertable
 
