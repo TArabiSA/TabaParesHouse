@@ -2,9 +2,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-dataset = st.container()
-
-
-with dataset:
-    month_data = pd.read_csv("C:/Users/yakul/mutipage/data/month.csv")
-    month_data.tail()
+def create_monthtable():
+    create_monthtable = pd.read_csv("C:/Users/yakul/mutipage/data/week.csv")
+    create_monthtable.tail()
+    return create_monthtable
