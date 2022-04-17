@@ -4,7 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import requests
 from streamlit_lottie import st_lottie
-import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
 import math
