@@ -7,5 +7,5 @@ scikit_learn==1.0.2
 streamlit==1.8.1
 streamlit_lottie==0.0.3
 tensorflow==2.8.0
-tf_nightly==2.8.0.dev20220414
+
 
