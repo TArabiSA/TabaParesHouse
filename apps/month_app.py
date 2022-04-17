@@ -6,7 +6,7 @@ from streamlit_lottie import st_lottie
 import matplotlib.pyplot as plt
 from data.month_data import create_monthtable
 
-
+sf = create_monthtable
 
 def app():
  st.title('Data :page_facing_up:')
