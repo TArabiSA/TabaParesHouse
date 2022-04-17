@@ -6,10 +6,10 @@ import requests
 from streamlit_lottie import st_lottie
 import tensorflow as tf
 import math
-from data.year_data import year_data
+from data.year_data import create_yeartable
 
 
-
+sf= create_yeartable
 
 
 def app():
@@ -31,7 +31,7 @@ def app():
     
     left_column, right_column = st.columns(2)
     with left_column:
-        df = year_data
+        df = sf
         st.write(df)
     with right_column:
         st_lottie(lottie_coding, height = 300, key ="coding")
@@ -40,8 +40,7 @@ def app():
     st.markdown("### ")
     st.title("Sale's on 2007 to 2021 chart")
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/year.csv',index_col='Date',parse_dates=True)
-    df.index.frequency='MS'
+    df = sf
     plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
     plt.plot(df.Sale)
@@ -52,8 +51,7 @@ def app():
 # Second Graph
 
     st.title("Sale's vs Time chart with 3 years moving average")
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/year.csv',index_col='Date',parse_dates=True)
-    df.index.frequency='MS'
+    df = sf
     ma3 = df.Sale.rolling(3).mean()
     fig = plt.plot(figsize=(12,6))
     plt.plot(ma3)
@@ -69,8 +67,7 @@ def app():
 # Third Graph
 
     st.title("Sale's vs Time chart with 3 years and 6 years moving average")
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/year.csv',index_col='Date',parse_dates=True)
-    df.index.frequency='MS'
+    df = sf
     ma3 = df.Sale.rolling(3).mean()
     ma6 = df.Sale.rolling(6).mean()
     fig = plt.plot(figsize=(12,6))
@@ -172,8 +169,7 @@ def app():
     plt.legend(['TEST','TRAIN','PREDICTION'], loc = 'upper left')
     st.pyplot(fig)
     
-    year = pd.read_csv('C:/Users/yakul/mutipage/data/year.csv', index_col='Date',parse_dates=True)
-    df.index.frequency='MS'
+    year = sf
     newdf = year.filter(['Sale'])
     last_3_years = newdf[-3:].values
     last_3_years_scaled = scaler.transform(last_3_years)
