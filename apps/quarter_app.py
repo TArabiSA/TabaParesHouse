@@ -40,7 +40,7 @@ def app():
     st.markdown("###   ")
     st.subheader("QUARTER Sale's 2018 to 2022 chart")
     st.set_option('deprecation.showPyplotGlobalUse', False)
-    df = pd.read_csv('C:/Users/yakul/mutipage/data/quarter.csv')
+    df = cm
    
     plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
@@ -52,7 +52,7 @@ def app():
 # Second Graph
 
     st.subheader("Sale's vs Time chart with 4 quarters moving average")
-    df = create_quartertable
+    df = cm
     ma4 = df.Sale.rolling(4).mean()
     ma4
     plt.figure(figsize = (12,6))
@@ -69,7 +69,7 @@ def app():
 
 
     st.subheader("Sale's vs Time chart with 4 quarters and 8 quarters moving average")
-    df = create_quartertable
+    df = cm
     ma4 = df.Sale.rolling(4).mean()
     ma4
     ma8 = df.Sale.rolling(8).mean()
@@ -161,7 +161,7 @@ def app():
     plt.legend(['TEST','TRAIN','PREDICTION'], loc = 'upper left')
     st.pyplot()
 
-    quarter = create_quartertable
+    quarter = cm
 
     newdf = quarter.filter(['Sale'])
     last_4_quarter = newdf[-4:].values
