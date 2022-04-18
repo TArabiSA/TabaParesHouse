@@ -5,7 +5,8 @@ import csv
 
 
 def create_weektable():
-    file = open('C:/Users/yakul/mutipage/data/week_data.csv')
+    st.title('data')
+    file = open("C:/Users/yakul/mutipage/data/week_data.csv")
     st.write(file)
    
 
