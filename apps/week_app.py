@@ -42,7 +42,7 @@ def app():
    
     plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
-    plt.plot(df['Sale'])
+    plt.plot(df.Sale)
     plt.xlabel('WEEKS', fontsize = 12)
     plt.ylabel('Sale Price PESO(₱)', fontsize = 12)
     st.pyplot()
