@@ -4,7 +4,7 @@ import streamlit as st
 import csv
 
 st.title('data')
-file = open("C:/Users/yakul/mutipage/data/week_data.csv")
+file = pd.read_csv("C:/Users/yakul/mutipage/data/week_data.csv")
 st.write(file)
    
 
