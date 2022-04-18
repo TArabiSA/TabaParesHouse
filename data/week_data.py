@@ -5,6 +5,9 @@ import streamlit as st
 
 
 def create_weektable():
-    create_weektable = pd.read_csv("data/week.csv")
-    st.write(create_weektable)
+    if uploaded_file is not None:
+        df=pd.read_csv(“week.csv”)
+        st.write(df)
+   
+
    
