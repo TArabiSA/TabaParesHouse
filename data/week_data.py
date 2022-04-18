@@ -4,10 +4,10 @@ import streamlit as st
 
 
 
-def create_weektable():
-    if uploaded_file is not None:
-        df=pd.read_csv(“week.csv”)
-        st.write(df)
+def create_monthtable():
+    create_monthtable = pd.read_csv("C:/Users/yakul/mutipage/data/week.csv")
+    create_monthtable.tail()
+    return create_monthtable
    
 
    
