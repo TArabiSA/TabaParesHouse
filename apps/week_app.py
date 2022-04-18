@@ -40,7 +40,7 @@ def app():
     df = iris
     fig =plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
-    plt.plot(df)
+    
     plt.xlabel('WEEKS', fontsize = 12)
     plt.ylabel('Sale Price PESO(₱)', fontsize = 12)
     st.pyplot(fig)
