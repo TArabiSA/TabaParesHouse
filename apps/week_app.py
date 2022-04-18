@@ -37,15 +37,12 @@ def app():
     st.title("Plot Data :chart_with_upwards_trend:")
     st.markdown("###   ")
     st.subheader("Weekly Sale's from January 10 to March 27 2022 chart")
-    st.set_option('deprecation.showPyplotGlobalUse', False)
-    df = iris
-   
-    plt.figure(figsize=(12,6))
+    fig =plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
     plt.plot(df.Sale)
     plt.xlabel('WEEKS', fontsize = 12)
     plt.ylabel('Sale Price PESO(₱)', fontsize = 12)
-    st.pyplot()
+    st.pyplot(fig)
 
 # Second Graph
 
