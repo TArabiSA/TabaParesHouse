@@ -6,5 +6,5 @@ import streamlit as st
 
 def create_weektable():
     create_weektable = pd.read_csv("data/week.csv")
-    create_weektable.tail()
-    return create_weektable
+    st.write(create_weektable)
+   
