@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import requests
 from streamlit_lottie import st_lottie
-import tensorflow as tf
 import math
 from data.year_data import create_yeartable
 
