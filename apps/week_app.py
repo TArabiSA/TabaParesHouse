@@ -51,7 +51,7 @@ def app():
     ma4 = df.Sale.rolling(4).mean()
     ma4
     plt.figure(figsize = (12,6))
-    plt.plot(df.Sale())
+    plt.plot(df)
     plt.plot(ma4)
     plt.title('Sale Price History')
     plt.xlabel('WEEKS', fontsize = 12)
