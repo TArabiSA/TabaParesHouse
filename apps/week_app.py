@@ -36,7 +36,7 @@ def app():
 # First graph
     st.title("Plot Data :chart_with_upwards_trend:")
     st.markdown("###   ")
-    st.subheader("Weekly Sale's from January 10 to March 27 2022 chart")
+    st.subheader("Weekly Sale's chart")
     df = iris
     fig =plt.figure(figsize=(12,6))
     plt.title('Sale Price History')
@@ -173,7 +173,7 @@ def app():
     print(pred_sale)
     
     
-    st.subheader("Prediction for April 3 2022  Sale's")
+    st.subheader("Prediction Sale's")
     st.write(pred_sale)
 
 
