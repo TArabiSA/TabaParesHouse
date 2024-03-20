@@ -7,7 +7,7 @@ from apps import week_app, month_app, quarter_app, year_app
 
 app = MultiApp()
 st.markdown("""
-# Taba Pares House Sale's Forecasting using LSTM
+# Sale's Forecasting using LSTM
 [Fabook page](https://www.facebook.com/TABAPARESHOUSE).
 """)
 
